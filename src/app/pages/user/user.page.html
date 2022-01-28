@@ -1,0 +1,7 @@
+<h1>Voici la page uilisateur</h1>
+<div *ngFor="let user of users">
+    <p>{{user.name}}</p>
+    <button [routerLink]="['/users/detail', user.id]">Profil utilisateur</button>
+</div>
+
+<router-outlet></router-outlet>
